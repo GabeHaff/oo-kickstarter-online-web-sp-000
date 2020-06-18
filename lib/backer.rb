@@ -15,7 +15,7 @@ class Backer
     
     def back_project(project=Project)
      @backed_projects << project
-     backer.back_project(project)
+     
      ###project.add_backer(self) --> works, breaks test for reciprocation from add_backer
      ##backer.back_project(project)
 
