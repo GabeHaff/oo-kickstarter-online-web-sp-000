@@ -15,9 +15,10 @@ class Backer
     
     def back_project(project=Project)
      @backed_projects << project
+     project.add_backer(self)
      
      ## when @backed_projects << project, @backers << self
-     #need to refer to relative file? project:@backers <<self ? when/case statement/init?
+     #need to refer to relative file? project:@backers <<self ? when/case statement/init? project.add_backer(self)
     end
     
     # adv: whenever @backed_projects << project, #<Project> @backers << backer
