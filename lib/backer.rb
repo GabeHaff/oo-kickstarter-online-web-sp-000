@@ -15,8 +15,10 @@ class Backer
     
     def back_project(project=Project)
      @backed_projects << project
-     project.add_backer(self)
-     
+     backer.back_project(project)
+     ###project.add_backer(self) --> works, breaks test for reciprocation from add_backer
+     ##backer.back_project(project)
+
      ## when @backed_projects << project, @backers << self
      #need to refer to relative file? project:@backers <<self ? when/case statement/init? project.add_backer(self)
     end
