@@ -17,6 +17,7 @@ class Backer
      @backed_projects << project
      
      ## when @backed_projects << project, @backers << self
+     #need to refer to relative file? project:@backers <<self ? when/case statement/init?
     end
     
     # adv: whenever @backed_projects << project, #<Project> @backers << backer
